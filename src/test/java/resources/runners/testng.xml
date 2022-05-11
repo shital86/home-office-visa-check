@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test suite">
+    <listeners>
+        <listener class-name="gov.uk.check.visa.customlisteners.CustomListeners"></listener>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+    <test name="Test">
+        <classes>
+            <class name="gov.uk.check.visa.testsuite.VisaConfirmationTest"/>
+        </classes>
+    </test>
+</suite>
